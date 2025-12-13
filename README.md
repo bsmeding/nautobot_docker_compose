@@ -490,3 +490,8 @@ Successfully copied 29.7kB to /path/to/config/nautobot_config.py
  ✔ Container postgres_temp                  Removed                                                           1.2s 
  ✔ Network nautobot_docker_compose_default  Removed                                                           0.2s 
 ```
+
+
+# Delete environment
+
+To stop and delete all data, stop the containers AND remove the datavolumes `docker compose down -v`  THIS WILL REMOVE ALL DATA IN NAUTOBOT! If you only want to stop the containers `docker compose down`
