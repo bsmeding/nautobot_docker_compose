@@ -1,0 +1,11 @@
+# Docker volumes and data
+postgres_data/
+redis_data/
+nautobot_config/
+
+# Logs
+*.log
+logs/
+
+# Jobs directory
+jobs/
