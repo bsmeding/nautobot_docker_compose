@@ -399,24 +399,6 @@ docker compose restart nautobot
 
 See the [SSOT documentation](https://docs.nautobot.com/projects/ssot/en/latest/admin/integrations/) for integration setup instructions.
 
-### Secrets Providers Error
-
-If you get an error like `RuntimeError: No secrets providers were published! Did you remember install the dependencies?`:
-
-The `nautobot-secrets-providers` plugin requires at least one provider backend (like HashiCorp Vault, AWS Secrets Manager, etc.) to be installed. 
-
-**Solution**: The Docker image needs to be built with `nautobot-secrets-providers[all]` instead of just `nautobot-secrets-providers`. 
-
-1. **If using the `bsmeding/nautobot` image**: Update `requirements-3.x.txt` in the Docker image repository to use `nautobot-secrets-providers[all]==4.0.0` and rebuild the image.
-
-2. **Or install providers manually** in the container (temporary workaround):
-   ```bash
-   docker compose exec nautobot pip install nautobot-secrets-providers[all]
-   docker compose restart nautobot
-   ```
-
-See the [Secrets Providers documentation](https://docs.nautobot.com/projects/secrets-providers/en/latest/) for available providers and configuration.
-
 ### Port already in use
 
 Change the ports in `.env`:
