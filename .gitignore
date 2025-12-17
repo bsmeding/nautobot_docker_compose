@@ -7,8 +7,12 @@ nautobot_config/
 *.log
 logs/
 
-# Jobs directory
-jobs/
+# Jobs directory - ignore all contents but keep folder structure
+jobs/*
+!jobs/.gitkeep
+!jobs/jobs/
+jobs/jobs/*
+!jobs/jobs/.gitkeep
 
 # OS
 .DS_Store
