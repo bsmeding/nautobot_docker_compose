@@ -1,5 +1,9 @@
 # Nautobot Test/Dev Setup
 
+> **⚠️ WARNING: NOT FOR PRODUCTION USE**
+>
+> This setup is designed for **testing and development purposes only**. It uses default credentials, simplified security settings, and is not hardened for production environments. For production deployments, please follow the official Nautobot documentation and implement proper security measures.
+
 This repository provides a **quick startup solution** for running Nautobot in a test or development environment. The setup includes **most of the free Nautobot apps** pre-installed and pre-configured, making it easy to get started with a fully-featured Nautobot instance without the hassle of manual plugin installation and configuration.
 
 The setup uses the `bsmeding/nautobot` Docker image which includes many pre-installed plugins, and comes with a pre-configured `nautobot_config.py` file that enables all available apps out of the box.
