@@ -58,8 +58,8 @@ All apps are pre-configured and ready to enable in the Nautobot configuration fi
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/bsmeding/nautobot_docker_compose
-cd nautobot_docker_compose
+git clone https://github.com/bsmeding/nautobot_docker_compose_test_environment
+cd nautobot_docker_compose_test_environment
 
 # 2. (Optional) Edit .env file to customize settings
 # The .env file is included with sensible defaults
