@@ -31,6 +31,12 @@ The following free Nautobot apps are pre-installed and ready to use:
 ### Design Builder
 ![Design Builder](images/nautobot_app_design_builder.png)
 
+### VPNs
+![VPNs](images/vpns.png)
+
+### Loadbalancers
+![Loadbalancers](images/loadbalancers.png)
+
 ### Additional Installed Apps
 
 In addition to the apps shown above, the following apps are also pre-installed and available:
